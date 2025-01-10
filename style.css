@@ -13,6 +13,7 @@ p {
 li {
   margin: 0px 10px;
 }
+
 a {
   text-decoration: none;
   color: black;
@@ -20,6 +21,13 @@ a {
 header {
   display: flex;
   justify-content: space-between;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.header__wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .green_bg {
   background-color: #6bac94;
@@ -36,8 +44,9 @@ header {
 .yellow_bg {
   background-color: #fff4a3;
 }
-.contaner {
-  padding: 20px;
+.sections {
+  max-width: 1440px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -93,9 +102,28 @@ header {
   justify-content: center;
   gap: 60px;
 }
-.coding{
-    margin: 8px;
+.coding {
+  margin: 8px;
+  max-width: 490px;
+  border-radius: 20px;
+  
 }
-.white_text{
-    color: #ffffff;
+.white_text {
+  color: #ffffff;
+}
+@media only screen and (max-width: 685px) {
+  .sections {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: block;
+  }
+  .header__menu{
+    display: none;
+  }
+  .coding {
+    margin: 8px;
+    max-width: 450px;
+    border-radius: 20px;
+  
+  }
 }
